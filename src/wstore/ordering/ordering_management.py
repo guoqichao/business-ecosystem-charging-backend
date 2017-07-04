@@ -267,8 +267,9 @@ class OrderingManager:
 
         self.rollback_logger['models'].append(order)
 
-        charging_engine = ChargingEngine(order)
-        return charging_engine.resolve_charging()
+        # charging_engine = ChargingEngine(order)
+        # return charging_engine.resolve_charging()
+        return None
 
     def _get_existing_contract(self, inv_client, product_id):
         # Get product info
